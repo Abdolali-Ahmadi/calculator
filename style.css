@@ -1,0 +1,86 @@
+:root{
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* font-family: ; */
+    background-color: rgb(222, 222, 222) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+}
+
+#calculator{
+    /* border:  1px solid red; */
+    background-image: linear-gradient(0deg, #111, #707070);
+    padding: 20px;
+    background-color: #333333;
+    border-radius: 20px;
+}
+#calculator textarea{
+    width: 100%;
+    padding: 10px;
+    height: 100px;
+    margin-bottom: 20px  ;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: rgb(195, 195, 195);
+    font-size: 20px;
+    resize: none;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#calculator .buttons{
+    /* border:  1px solid green; */
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+    gap: 5px;
+}
+#calculator .buttons .btn{
+    padding:  20px 5px;
+    border-radius: 50%;
+    /* border: 1px #d7d7d7 solid; */
+    border: none;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #444;
+    color:rgb(195, 195, 195) ;
+    box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: all .1s ease-in;
+}
+#calculator .buttons .btn:active{
+    scale: 0.9;
+}
+
+#calculator .buttons #division,
+#calculator .buttons #multiply, 
+#calculator .buttons #sub,
+#calculator .buttons #add{
+    background-color:rgb(104, 61, 104) ;
+}
+#calculator .buttons #equal{
+    grid-row: auto / span 2 ;
+    background-color: rgb(180, 36, 180);
+    border-radius: 45px;
+}
+#calculator .buttons #clear-btn{
+    background-color: orange;
+    color: white;
+}
+#calculator .buttons #parenthes-open,
+#calculator .buttons #parenthes-close,
+#calculator .buttons #root,
+#calculator .buttons #sign,
+#calculator .buttons #mod{
+    background-color:rgb(130, 114, 86) ;
+    color: rgb(225, 146, 0);
+}
