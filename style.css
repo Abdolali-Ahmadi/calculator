@@ -19,33 +19,36 @@ body{
 #calculator{
     /* border:  1px solid red; */
     background-image: linear-gradient(0deg, #111, #707070);
-    padding: 20px;
+    padding: 40px 20px;
     background-color: #333333;
     border-radius: 20px;
+    /* text-shadow: -10px 5px 0px #333; */
 }
 #calculator textarea{
     width: 100%;
     padding: 10px;
     height: 100px;
-    margin-bottom: 20px  ;
+    margin-bottom: 20px;
     background: transparent;
     border: none;
+    border-radius: 5px;
     outline: none;
     color: rgb(195, 195, 195);
     font-size: 20px;
     resize: none;
-    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.5);
+    
 }
 
 #calculator .buttons{
     /* border:  1px solid green; */
     display: grid;
     grid-template-columns: repeat(4 ,1fr);
-    gap: 5px;
+    gap: 10px;
 }
 #calculator .buttons .btn{
     padding:  20px 5px;
-    border-radius: 50%;
+    border-radius: 48%;
     /* border: 1px #d7d7d7 solid; */
     border: none;
     font-size: 20px;
@@ -53,12 +56,15 @@ body{
     font-weight: bold;
     background-color: #444;
     color:rgb(195, 195, 195) ;
-    box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5);
+    box-shadow:
+     2px 2px 5px 0px rgba(0, 0, 0, 0.6),
+     inset 2px 2px 2px rgba(255, 255, 255, 0.3);
     cursor: pointer;
-    transition: all .1s ease-in;
+    transition: all .05s ease-in;
+
 }
 #calculator .buttons .btn:active{
-    scale: 0.9;
+    scale: 0.95;
 }
 
 #calculator .buttons #division,
