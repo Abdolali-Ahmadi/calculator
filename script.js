@@ -48,8 +48,11 @@ backSpace.addEventListener('click',()=>{
 })
 dot.addEventListener('click',()=>{
     if (textArea.value.at(-1) != '.') {
-            textArea.value += '.'
+        textArea.value += '.'
     }
+    if (textArea.value.includes('\n')) {
+            textArea.value=""; 
+        }
 })
 
 // for (let i = 0; i <= 9; i++) {
